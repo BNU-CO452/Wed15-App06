@@ -3,20 +3,93 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="551.0">Player</node>
-    <node x="0.0" y="0.0">Game</node>
-    <node x="0.0" y="235.0">Command</node>
-    <node x="0.0" y="404.0">CommandWord</node>
-    <node x="153.0" y="551.0">ConsoleColours</node>
-    <node x="294.0" y="235.0">CommandWords</node>
-    <node x="386.0" y="551.0">Map</node>
-    <node x="302.0" y="0.0">Room</node>
-    <node x="500.0" y="404.0">Main</node>
-    <node x="264.0" y="404.0">Parser</node>
+    <node x="827.65" y="0.0">Player</node>
+    <node x="157.86249999999995" y="498.0">Game</node>
+    <node x="523.15" y="163.0">Command</node>
+    <node x="442.7201923076923" y="0.0">CommandWord</node>
+    <node x="0.0" y="819.0">ConsoleColours</node>
+    <node x="223.15" y="174.0">CommandWords</node>
+    <node x="7.149999999999977" y="152.0">Room</node>
+    <node x="211.86249999999998" y="716.0">Main</node>
+    <node x="0.0" y="348.0">Map</node>
+    <node x="344.0352564102564" y="348.0">Parser</node>
   </nodes>
   <notes />
-  <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="324.5" y="304.5" />
+  <edges>
+    <edge source="Map" target="Room">
+      <point x="-50.66666666666663" y="-40.0" />
+      <point x="25.33333333333337" y="328.0" />
+      <point x="26.75" y="328.0" />
+      <point x="-78.39999999999998" y="73.0" />
+    </edge>
+    <edge source="Game" target="Room">
+      <point x="-16.0625" y="-84.0" />
+      <point x="270.29999999999995" y="448.0" />
+      <point x="201.52660256410255" y="448.0" />
+      <point x="201.52660256410255" y="318.0" />
+      <point x="183.54999999999995" y="318.0" />
+      <point x="78.39999999999998" y="73.0" />
+    </edge>
+    <edge source="Main" target="Game">
+      <point x="-37.25" y="-29.0" />
+      <point x="249.11249999999998" y="691.0" />
+      <point x="222.11249999999995" y="691.0" />
+      <point x="-64.25" y="84.0" />
+    </edge>
+    <edge source="Command" target="CommandWord">
+      <point x="-62.25" y="-62.0" />
+      <point x="585.4" y="132.0" />
+      <point x="552.2201923076923" y="132.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="Parser" target="CommandWords">
+      <point x="-71.625" y="-40.0" />
+      <point x="367.9102564102564" y="328.0" />
+      <point x="293.15" y="328.0" />
+      <point x="-70.0" y="51.0" />
+    </edge>
+    <edge source="CommandWords" target="CommandWord">
+      <point x="-70.0" y="-51.0" />
+      <point x="293.15" y="122.0" />
+      <point x="464.62019230769226" y="122.0" />
+      <point x="-87.60000000000002" y="51.0" />
+    </edge>
+    <edge source="Game" target="Parser">
+      <point x="16.0625" y="-84.0" />
+      <point x="302.42499999999995" y="448.0" />
+      <point x="391.7852564102564" y="448.0" />
+      <point x="-47.75" y="40.0" />
+    </edge>
+    <edge source="Game" target="CommandWord">
+      <point x="112.4375" y="-84.0" />
+      <point x="398.79999999999995" y="478.0" />
+      <point x="782.65" y="478.0" />
+      <point x="782.65" y="122.0" />
+      <point x="639.8201923076923" y="122.0" />
+      <point x="87.60000000000002" y="51.0" />
+    </edge>
+    <edge source="Game" target="Command">
+      <point x="80.3125" y="-84.0" />
+      <point x="366.67499999999995" y="468.0" />
+      <point x="674.1602564102564" y="468.0" />
+      <point x="674.1602564102564" y="328.0" />
+      <point x="730.65" y="328.0" />
+      <point x="82.99999999999997" y="62.0" />
+    </edge>
+    <edge source="Game" target="Map">
+      <point x="-112.4375" y="-84.0" />
+      <point x="173.92499999999995" y="478.0" />
+      <point x="38.0" y="478.0" />
+      <point x="-38.0" y="40.0" />
+    </edge>
+    <edge source="Parser" target="Command">
+      <point x="23.875" y="-40.0" />
+      <point x="463.4102564102564" y="318.0" />
+      <point x="564.65" y="318.0" />
+      <point x="-83.0" y="62.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6815578465063001" x="468.0" y="426.5" />
   <SelectedNodes>
     <node>Player</node>
   </SelectedNodes>
