@@ -67,7 +67,7 @@ public class Game
         System.out.println("World of Zuul is a new, incredibly boring adventure game.");
         System.out.println("Type '" + CommandWord.HELP + "' if you need help.");
         System.out.println();
-        System.out.println(currentRoom.getLongDescription());
+        System.out.println(currentRoom.getShortDescription());
     }
 
     /**
@@ -95,11 +95,20 @@ public class Game
                 goRoom(command);
                 break;
 
+            case LOOK:
+                lookAround();
+                break;
+
             case QUIT:
                 wantToQuit = quit(command);
                 break;
         }
         return wantToQuit;
+    }
+
+    private void lookAround()
+    {
+        System.out.println(currentRoom.getLongDescription());
     }
 
     // implementations of user commands:

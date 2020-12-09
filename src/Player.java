@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  *
  */
@@ -7,6 +9,7 @@ public class Player
     private int score;
     private int count;
 
+    private ArrayList itemList = new ArrayList();
     /**
      * Added another comment
      * @param name
